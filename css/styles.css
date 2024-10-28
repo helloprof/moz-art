@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Henny+Penny&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    /* background-color: black; */
+    color: white;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'EB Garamond', serif;
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.card-div { 
+    /* background-color: #202020; */
+    background-color: gray;
+    color: #7CFC00;
+    border: solid white 1px;
+    height: 50%;
+
+}
+
+.card-div:hover { 
+    background-color: #202020;
+    color: white;
+    border: solid #7CFC00 1px;
+}
+
+#ghostwriter { 
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px pink;
+}
+
+.card-div img { 
+    border: solid #7CFC00 1px;
+    width: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Henny Penny', cursive;
+    text-shadow: 5px 5px 7px pink;
+
+    /* font-size:  */
+}
+
+audio {
+    width: 100%;
+    /* background-color: #202020; */
+    /* background-color: white; */
+}
