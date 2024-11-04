@@ -1,31 +1,48 @@
 <!-- Your main page should go here -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
-
+    <script src="https://kit.fontawesome.com/efeb3f9255.js" crossorigin="anonymous"></script>
     <title>MOZ-ART</title>
 </head>
+
 <body>
-    <h1> MOZ-ART</h1>
-    <h3> AI-Generated Album Art</h3>
-    <!-- <button>CLICK TO START</button> -->
-    <div>
-        <img width="50px" src="images/ghostwriter.jpg">
+
+    <div id="nav">
+        <div class="title">
+            <h1> MOZ-ART</h1>
+            <!-- <h3> AI-Generated Album Art</h3> -->
+        </div>
+        <div>
+            <!-- search -->
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="input" placeholder="Search for Artists">
+        </div>
+        <div>
+            <button><i class="fa-solid fa-user-plus"></i></button>
+            <button><i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+    </div>
+    <div id="main"> 
+        <div id="sidebar">
+            <i class="fa-solid fa-image"></i>
+
+            <input type="text" class="input" id="chatInput" placeholder="Request AI Album Art">
+
+        </div>
+        <div id="homepage">
+
+        </div>
 
     </div>
-<div id="nav">
-    nav bar
-</div>
 
-<div id="homepage">
-    
-</div>
-<!-- <div id="ghostwriter" class="card-div">
+    <!-- <div id="ghostwriter" class="card-div">
     <img width="500px" src="https://upload.wikimedia.org/wikipedia/en/f/ff/Heart_on_My_Sleeve_ghostwriter977.jpg"> 
         ghostwriter
     <div>
@@ -43,13 +60,13 @@
         </audio>  
     </div>
 </div> -->
-<!-- <script>
+    <!-- <script>
     console.log("hello")
 </script> -->
-<script src="/js/artists.js"></script>
-<script src="/js/songs.js"></script>
+    <script src="/js/artists.js"></script>
+    <script src="/js/songs.js"></script>
 
-<script src="/js/app.js"></script>
+    <script src="/js/app.js"></script>
 
 
     <!-- <video width="500px" controls autoplay> 
@@ -76,4 +93,5 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nIoOv6lWYnk?si=H0uU4od-VU6FUUNb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div> -->
 </body>
+
 </html>
