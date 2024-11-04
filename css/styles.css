@@ -6,7 +6,7 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'EB Garamond', serif;
     background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -45,7 +45,8 @@ h5,
 h6 {
     font-family: 'Henny Penny', cursive;
     text-shadow: 5px 5px 7px pink;
-
+    margin: 10px;
+    
     /* font-size:  */
 }
 
@@ -53,4 +54,65 @@ audio {
     width: 100%;
     /* background-color: #202020; */
     /* background-color: white; */
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#nav { 
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.input {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 30px;
+    border: solid white 1px;
+    background-color: #202020;
+    color: white;
+    font-size: large;
+}
+
+button {
+    padding: 15px 20px;
+    margin: 5px;
+    border-radius: 30px;
+    border: solid black 1px;
+    background-color: #202020;
+    color: white;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #7CFC00;
+    color: black;
+}
+
+#homepage {
+    background-color: #1E1E1E;
+    width: 80%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+#sidebar {
+    width: 20%;
+    height: 80vh;
+    background-color: #121212;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
 }
