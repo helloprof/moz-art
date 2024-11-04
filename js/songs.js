@@ -29,5 +29,18 @@ window.songs = [
     year: 2023,
     explicit: true
   },
-  
+  {
+    songID: 3,
+    artistID: 1,
+    title: "Heart on my Sleeve",
+    year: 2023,
+    explicit: true
+  },
+  {
+    songID: 4,
+    artistID: 2,
+    title: "Ghostwriter",
+    year: 2023,
+    explicit: true
+  },
 ];
