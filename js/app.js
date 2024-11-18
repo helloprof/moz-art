@@ -22,31 +22,58 @@ console.log({ artists, songs }, "App Data");
 
 function generateSongsList(artistSong) {
     let songsDivNew = document.querySelector("#songs")
-    let songP = document.createElement("p") // table rows here
-    songP.innerText = artistSong.title
+    let songCard = document.createElement("div") // table rows here
+    
+    // img 
+    let songImg = document.createElement("img")
+    songImg.className = "songImg"
+    songImg.src = artistSong.albumCover
 
-    songsDivNew.appendChild(songP)
+    // // video 
+    // let songImg = document.createElement("video")
+    // // songImg.className = "songImg"
+    // songImg.src = artistSong.audioMP4
+    // songImg.controls = true
+    // songImg.style.width = "100%"
+    // songImg.style.height = "100%"
+
+
+
+    // title 
+    let songTitle = document.createElement("h2")
+    songTitle.textContent = artistSong.title
+
+    // artist
+    let songArtist = document.createElement("p")
+    selectedArtist = artists.find((artist) => {
+        return artist.artistID === artistSong.artistID
+    })
+
+    songArtist.textContent = selectedArtist.name
+
+    songCard.appendChild(songImg)
+    songCard.appendChild(songTitle)
+    songCard.appendChild(songArtist)
+
+    songCard.className = "songCard"
+    // console.log()
+    songsDivNew.appendChild(songCard)
 }
 
 function generateArtistList() {
     let homepage = document.querySelector("#homepage")
     artists.forEach((artist) => {
-        let artistButton = document.createElement("button")
-        let icon = document.createElement("i")
-        icon.className = "fas fa-user"
-        
-        artistButton.innerText = artist.name
-        artistButton.style.backgroundColor = "green"
-        artistButton.style.borderRadius = "30px"
-        artistButton.style.margin = "10px"
-        artistButton.style.padding = "10px"
-        artistButton.appendChild(icon)
+        let artistButton = document.createElement("img")
+
+        artistButton.className = "artistButton"
+
+        artistButton.src = artist.profilePic
 
 
         homepage.appendChild(artistButton)
 
         artistButton.addEventListener("click", function(){
-
+            console.log(artist.name)
             // check if existing songs are displayed
             let songsDiv = document.querySelector("#songs")
             if(songsDiv){
@@ -55,7 +82,8 @@ function generateArtistList() {
             
             const songsDivNew = document.createElement("div") // table body recreated (new one created to hold the new artist songs)
             songsDivNew.id = "songs"
-            songsDivNew.style.backgroundColor = "black"
+            // songsDivNew.style.backgroundColor = "black"
+            songsDivNew.className = "songsDiv"
 
             homepage.appendChild(songsDivNew)
 
