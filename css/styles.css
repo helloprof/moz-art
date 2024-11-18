@@ -4,7 +4,8 @@ body {
     /* background-color: black; */
     color: white;
     /* font-family: 'Roboto', sans-serif; */
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Courier New', Courier, monospace;
     background-color: #000000;
     /* background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -38,7 +39,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -67,6 +67,8 @@ audio {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'EB Garamond', serif;
+
 }
 
 
@@ -115,4 +117,67 @@ button:hover {
     display: flex;
     flex-direction: row;
     /* width: 100%; */
+}
+
+.artistButton {
+    /* artistButton.style.borderRadius = "50%"
+    artistButton.style.width = "100px"
+    artistButton.style.height = "100px"
+    artistButton.style.margin = "10px"
+    artistButton.style.padding = "10px"
+    artistButton.style.backgroundColor = "black" */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+
+}
+
+.artistButton:hover {
+    background-color: #7CFC00;
+    color: black;
+    /* grey out the image */
+    opacity: 0.3;
+}
+
+.songCard {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+    /* background-color: #202020; */
+    color: white;
+    /* border: solid white 1px; */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    text-align: center;
+
+}
+
+.songCard:hover {
+    background-color: #202020;
+    transition-duration: 50ms;
+    /* color: #7CFC00; */
+    /* border: solid #7CFC00 1px; */
+}
+
+#songs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.songImg {
+    /* border: solid white 1px; */
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
 }
