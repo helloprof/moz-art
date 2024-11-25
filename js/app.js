@@ -69,6 +69,15 @@ function generateSongsList(artistSong) {
     }
 
     songCard.className = "songCard"
+    songCard.addEventListener("click", () => {
+        let generatedImg = document.querySelector(".generatedImg")
+        generatedImg.style.border = "solid 2px #7CFC00"
+        generatedImg.addEventListener("click", () => {
+            console.log("clicked")
+            songImg.src = generatedImg.src 
+        })
+
+    })
     // console.log()
     songsDivNew.appendChild(songCard)
 }
