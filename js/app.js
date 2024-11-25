@@ -29,6 +29,14 @@ function generateSongsList(artistSong) {
     songImg.className = "songImg"
     songImg.src = artistSong.albumCover
 
+    let songAudio = document.createElement("audio")
+    songAudio.src = artistSong.audioMP4
+    songAudio.controls = true
+    songAudio.style.width = "100%"
+    
+
+
+
     // // video 
     // let songImg = document.createElement("video")
     // // songImg.className = "songImg"
@@ -54,6 +62,11 @@ function generateSongsList(artistSong) {
     songCard.appendChild(songImg)
     songCard.appendChild(songTitle)
     songCard.appendChild(songArtist)
+
+    if (artistSong.audioMP4) {
+        songCard.appendChild(songAudio)
+
+    }
 
     songCard.className = "songCard"
     // console.log()
