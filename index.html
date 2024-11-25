@@ -26,11 +26,12 @@
         </div>
         <div>
             <button><i class="fa-solid fa-user-plus"></i></button>
-            <button><i class="fa-solid fa-right-to-bracket"></i></button>
+            <button><a href="/new"><i class="fa-solid fa-right-to-bracket"></i></a></button>
         </div>
     </div>
     <div id="main">
         <div id="sidebar">
+            <!-- " action="https://httpbin.org/post"> -->
             <form method="POST" class="chatForm">
                 <i class="fa-solid fa-image" style="padding: 10px;"></i>
                 <input type="text" name="chatInput" class="input" id="chatInput" placeholder="Request AI Album Art">
@@ -60,7 +61,12 @@
                         .then(response => response.json())
                         .then(
                             data => {
-                                console.log(data[0].url)
+                                console.log(data.data[0].url)
+                                let generatedImg = document.createElement("img")
+                                generatedImg.className = "generatedImg"
+                                generatedImg.src = data.data[0].url
+                                let sidebar = document.querySelector("#sidebar")
+                                sidebar.appendChild(generatedImg)
                             }
 
                         )
