@@ -115,11 +115,16 @@ button:hover {
 }
 
 #sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     width: 20%;
     height: 80vh;
     background-color: #121212;
     margin: 10px;
     border-radius: 25px;
+    overflow-y: auto;
 }
 
 #main {
@@ -189,4 +194,20 @@ button:hover {
     width: 95%;
     height: 95%;
     border-radius: 5%;
+}
+
+.generatedImg {
+    /* border: solid white 1px; */
+    width: 90%;
+    /* height: 500px; */
+    border-radius: 5%;
+    text-align: center;
+}
+
+.generatedImg:hover {
+    background-color: #7CFC00;
+    transition-duration: 50ms;
+    opacity: 0.5;
+    /* color: #7CFC00; */
+    /* border: solid #7CFC00 1px; */
 }
